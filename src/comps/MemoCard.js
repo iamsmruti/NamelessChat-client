@@ -19,11 +19,11 @@ const MemoCard = ({ memo, handleDelete }) => {
                         {memo.category[0].toUpperCase()}
                     </Avatar>
                 }
-                action={
-                    <IconButton onClick={() => handleDelete(memo._id)}>
-                        <DeleteOutlineIcon />
-                    </IconButton>
-                }
+                // action={
+                //     <IconButton onClick={() => handleDelete(memo._id)}>
+                //         <DeleteOutlineIcon />
+                //     </IconButton>
+                // }
                 title={memo.title}
                 subheader={memo.category}
             />
