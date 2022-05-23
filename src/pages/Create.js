@@ -14,7 +14,7 @@ const Create = () => {
     const navigate = useNavigate()
     const [title, setTitle] = useState('')
     const [details, setDetails] = useState('')
-    const [category, setCategory] = useState('todos')
+    const [category, setCategory] = useState('emotional')
 
     const [titleError, setTitleError] = useState(false)
     const [detailsError, setDetailsError] = useState(false)
@@ -45,7 +45,7 @@ const Create = () => {
             component='h2'
             gutterBottom
         >
-            Create a New Memo
+            Write your Message
         </Typography>
 
         <form noValidate autoComplete='off' action="" onSubmit={handleSubmit}>
@@ -57,7 +57,7 @@ const Create = () => {
                     display: 'block'
                 }}
                 variant='outlined' 
-                label="Memo Title"
+                label="Message Title"
                 color='secondary'
                 fullWidth
                 required
@@ -71,7 +71,7 @@ const Create = () => {
                     display: 'block'
                 }}
                 variant='outlined' 
-                label="Memo Details"
+                label="Your Message"
                 color='secondary'
                 multiline
                 rows={4}
@@ -80,21 +80,19 @@ const Create = () => {
                 error={detailsError}
             />
 
-            <FormControl 
+            {/* <FormControl 
                 sx={{
                     color: 'secondary', 
                     marginTop: 2,
                     marginBottom: 2
                 }}>
-                <FormLabel>Memo Category</FormLabel>
+                <FormLabel>Message Category</FormLabel>
                 <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)}>
-                    <FormControlLabel value='money' control={<Radio color='secondary' />} label='Money'/>
-                    <FormControlLabel value='todos' control={<Radio color='secondary'/>} label='ToDos'/>
-                    <FormControlLabel value='reminders' control={<Radio color='secondary'/>} label='Reminders'/>
-                    <FormControlLabel value='gym' control={<Radio color='secondary'/>} label='Gym'/>
-                    <FormControlLabel value='work' control={<Radio color='secondary'/>} label='Work'/>
+                    <FormControlLabel value='emotional' control={<Radio color='secondary' />} label='Emotional'/>
+                    <FormControlLabel value='dedicated' control={<Radio color='secondary'/>} label='Dedicated'/>
+                    <FormControlLabel value='hateful' control={<Radio color='secondary'/>} label='Hateful'/>
                 </RadioGroup>
-            </FormControl>
+            </FormControl> */}
 
             <br />
 

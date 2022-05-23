@@ -20,12 +20,12 @@ const Layout = ({ children }, props) => {
     console.log(location.pathname)
     const menuItems = [
         {
-            text: "My Memos",
+            text: "All Messages",
             icon: <SubjectIcon color='secondary' />,
             path: '/'
         },
         {
-            text: "Create a Memo",
+            text: "Write a Messsage",
             icon: <AddCircleOutlineIcon color='secondary' />,
             path: '/create'
         }
@@ -42,7 +42,7 @@ const Layout = ({ children }, props) => {
         <>
             <div>
                 <Typography margin={2} marginLeft={2} variant='h5'>
-                    Hello Memos
+                    Nameless Chat
                 </Typography>
             </div>
     
@@ -80,7 +80,7 @@ const Layout = ({ children }, props) => {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant='h6'>
-                        Today is {format(new Date(), 'do MMMM')}
+                        Have fun !
                     </Typography>
                     <Typography
                         variant='h6'
@@ -88,10 +88,10 @@ const Layout = ({ children }, props) => {
                             marginLeft: 'auto'
                         }}
                     >
-                        Smruti
+                        Daddy
                     </Typography>
                     <Avatar
-                        src='/favicon.ico'
+                        src='/123.png'
                         sx={{
                             marginLeft: 1
                         }}

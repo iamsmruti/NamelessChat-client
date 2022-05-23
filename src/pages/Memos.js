@@ -23,6 +23,8 @@ const Memos = () => {
         setMemos(memos.filter((memo) => memo._id !== id))
     }
 
+    console.log(memos)
+
     const breakpoints = {
         default: 3,
         1100: 2,
