@@ -28,7 +28,7 @@ const Create = () => {
         if( details === '') setDetailsError(true)
 
         if(title && details){
-            fetch('http://localhost:10000/memos', {
+            fetch('https://hello-memo-api.herokuapp.com/memos', {
                 method: 'POST',
                 headers: {
                     "Content-Type" : "application/json"

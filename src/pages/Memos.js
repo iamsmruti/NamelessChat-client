@@ -10,13 +10,13 @@ const Memos = () => {
     const [memos, setMemos] = useState([])
     const track = 0
     useEffect(() => {
-        fetch('http://localhost:10000/memos/')
+        fetch('https://hello-memo-api.herokuapp.com/memos/')
             .then((res) => res.json())
             .then((data) => setMemos(data))
     }, [track]);
 
     const handleDelete = async (id) => {
-        await fetch('http://localhost:10000/memos/'+ id, {
+        await fetch('https://hello-memo-api.herokuapp.com/memos/'+ id, {
             method: 'DELETE',
         })
 
