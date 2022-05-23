@@ -14,7 +14,7 @@ const Create = () => {
     const navigate = useNavigate()
     const [title, setTitle] = useState('')
     const [details, setDetails] = useState('')
-    const [category, setCategory] = useState('emotional')
+    const [category, setCategory] = useState('')
 
     const [titleError, setTitleError] = useState(false)
     const [detailsError, setDetailsError] = useState(false)
