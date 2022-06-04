@@ -1,5 +1,5 @@
 
-# HelloMemo
+# NameLess Chat
 
 This App let's you chat with your friends anonymously. Anyone with the website link can send messages. 
 
